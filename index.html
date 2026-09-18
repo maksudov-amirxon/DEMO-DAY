@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maydon.uz — Аренда и бронирование футбольных полей в Ташкенте</title>
+  <meta name="description" content="Поиск и онлайн-бронирование футбольных полей в Ташкенте. Искусственный и натуральный газон, крытые манежи, 5х5, 7х7, 11х11 во всех районах города.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== ВЕРХНЯЯ ШАПКА САЙТА (HEADER) ==================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="/" class="logo" id="main-logo">
+        <div class="logo-icon">
+          <!-- Футболный мяч / эмблема SVG -->
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 3.07c2.96.38 5.34 2.45 6.13 5.25L15.4 12l-2.4-6.93zM8.87 5.07L11 12 7.2 13.9 4.87 10.32c.79-2.8 3.17-4.87 6-5.25zM4.15 12.87l3.22 1.61.94 4.45c-2.43-.88-4.22-3.03-4.16-6.06zm7.85 6.06l-.94-4.43 3.88-1.94.94 4.43c-1.12.8-2.46 1.4-3.88 1.94zm6.85-6.06c.06 3.03-1.73 5.18-4.16 6.06l.94-4.45 3.22-1.61z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">MAYDON<span class="text-accent">.UZ</span></span>
+          <span class="logo-subtitle">Ташкент • Футбол</span>
+        </div>
+      </a>
+
+      <!-- CSS-only мобильное меню через :checked чекбокс -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Открыть меню">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#catalog" class="nav-link active">Все поля</a></li>
+          <li><a href="#filters" class="nav-link">Подбор по параметрам</a></li>
+          <li><a href="#how-it-works" class="nav-link">Как забронировать</a></li>
+          <li><a href="#districts" class="nav-link">Районы Ташкента</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="tel:+998712000000" class="phone-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            +998 (71) 200-00-00
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO СЕКЦИЯ ==================== -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Более 140 полей доступно сегодня в Ташкенте
+          </div>
+          <h1 class="hero-title">
+            Найди идеальное <span class="gradient-text">футбольное поле</span> для игры с друзьями
+          </h1>
+          <p class="hero-desc">
+            Бронируй площадки 5х5, 7х7 и 11х11 во всех районах Ташкента за 1 минуту. Прямой расчёт с владельцами, актуальное расписание и проверенный газон.
+          </p>
+
+          <div class="hero-features">
+            <div class="hero-feat-item">
+              <div class="feat-icon">⚡</div>
+              <div>
+                <strong>Моментальная бронь</strong>
+                <p>Фиксация времени без звонков</p>
+              </div>
+            </div>
+            <div class="hero-feat-item">
+              <div class="feat-icon">🏟️</div>
+              <div>
+                <strong>FIFA-стандарты</strong>
+                <p>Европейский искусственный и живой газон</p>
+              </div>
+            </div>
+            <div class="hero-feat-item">
+              <div class="feat-icon">📍</div>
+              <div>
+                <strong>Все 12 районов</strong>
+                <p>Юнусабад, Чиланзар, Мирабад и др.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="field-visual-card">
+            <div class="field-graphic">
+              <!-- Стилизованная разметка футбольного поля в SVG -->
+              <svg viewBox="0 0 400 260" class="soccer-pitch-svg">
+                <rect x="10" y="10" width="380" height="240" rx="8" fill="#0c2317" stroke="#00ff87" stroke-width="2" opacity="0.9" />
+                <!-- Центр -->
+                <line x1="200" y1="10" x2="200" y2="250" stroke="#00ff87" stroke-width="1.5" stroke-dasharray="4 2" />
+                <circle cx="200" cy="130" r="45" fill="none" stroke="#00ff87" stroke-width="1.5" />
+                <circle cx="200" cy="130" r="3" fill="#00ff87" />
+                <!-- Штрафная слева -->
+                <rect x="10" y="55" width="65" height="150" fill="none" stroke="#00ff87" stroke-width="1.5" />
+                <rect x="10" y="90" width="25" height="80" fill="none" stroke="#00ff87" stroke-width="1.5" />
+                <!-- Штрафная справа -->
+                <rect x="325" y="55" width="65" height="150" fill="none" stroke="#00ff87" stroke-width="1.5" />
+                <rect x="365" y="90" width="25" height="80" fill="none" stroke="#00ff87" stroke-width="1.5" />
+                <!-- Ворота -->
+                <rect x="2" y="105" width="8" height="50" fill="#00ff87" opacity="0.6" />
+                <rect x="390" y="105" width="8" height="50" fill="#00ff87" opacity="0.6" />
+              </svg>
+              <div class="field-floating-badge top-right">
+                <span class="badge-dot"></span> Свободно: 19:00 - 21:00
+              </div>
+              <div class="field-floating-badge bottom-left">
+                ⭐ 4.9 (128 отзывов)
+              </div>
+            </div>
+            <div class="field-card-mini-info">
+              <div>
+                <strong>Bunyodkor Football Center</strong>
+                <span>Чиланзар • Искусственная трава 60мм</span>
+              </div>
+              <a href="#booking-bunyodkor" class="btn btn-sm btn-accent">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== БЛОК ПОИСКА И ФИЛЬТРАЦИИ (HTML GET) ==================== -->
+    <section class="filters-section" id="filters">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ПОИСК МЕСТА</span>
+          <h2 class="section-title">Фильтры футбольных площадок</h2>
+          <p class="section-desc">Настройте поиск по району Ташкента, формату поля, покрытию и необходимым удобствам</p>
+        </div>
+
+        <!-- ФОРМА ОТПРАВКИ GET НА СЕРВЕР -->
+        <form action="/search" method="GET" class="filter-form" id="search-form">
+          
+          <!-- Основная строка: Район + Дата + Формат -->
+          <div class="filter-main-row">
+            <!-- Выбор района Ташкента -->
+            <div class="form-group district-group">
+              <label for="district-select" class="form-label">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                Район Ташкента
+              </label>
+              <select name="district" id="district-select" class="form-control select-control">
+                <option value="all">Все районы Ташкента</option>
+                <option value="chilonzor" selected>Чиланзарский район</option>
+                <option value="yunusobod">Юнусабадский район</option>
+                <option value="mirobod">Мирабадский район</option>
+                <option value="mirzo-ulugbek">Мирзо-Улугбекский район</option>
+                <option value="yakkasaroy">Яккасарайский район</option>
+                <option value="shaykhontokhur">Шайхантахурский район</option>
+                <option value="sergeli">Сергелийский район</option>
+                <option value="olmazor">Алмазарский район</option>
+                <option value="yashnobod">Яшнабадский район</option>
+                <option value="uchtepa">Учтепинский район</option>
+                <option value="bektemir">Бектемирский район</option>
+              </select>
+            </div>
+
+            <!-- Выбор желаемой даты -->
+            <div class="form-group date-group">
+              <label for="search-date" class="form-label">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+                Дата игры
+              </label>
+              <input type="date" name="date" id="search-date" class="form-control date-control" value="2026-09-19">
+            </div>
+
+            <!-- Формат / Размер поля (Радиокнопки) -->
+            <div class="form-group size-group">
+              <span class="form-label">Размер поля</span>
+              <div class="radio-pills-container">
+                <label class="radio-pill-label">
+                  <input type="radio" name="size" value="all" checked class="radio-pill-input">
+                  <span class="radio-pill-btn">Любой</span>
+                </label>
+                <label class="radio-pill-label">
+                  <input type="radio" name="size" value="5x5" class="radio-pill-input">
+                  <span class="radio-pill-btn">5х5</span>
+                </label>
+                <label class="radio-pill-label">
+                  <input type="radio" name="size" value="7x7" class="radio-pill-input">
+                  <span class="radio-pill-btn">7х7</span>
+                </label>
+                <label class="radio-pill-label">
+                  <input type="radio" name="size" value="11x11" class="radio-pill-input">
+                  <span class="radio-pill-btn">11х11</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Раскрывающиеся расширенные фильтры через pure HTML5 <details> -->
+          <details class="advanced-filters" open>
+            <summary class="advanced-filters-trigger">
+              <span class="trigger-title">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+                </svg>
+                Тип покрытия и удобства
+              </span>
+              <span class="trigger-hint">Нажмите, чтобы скрыть/раскрыть</span>
+            </summary>
+
+            <div class="advanced-filters-content">
+              <!-- Блок: Тип покрытия -->
+              <div class="filter-col">
+                <h3 class="filter-col-title">Тип площадки и покрытие</h3>
+                <div class="checkbox-list">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="surface[]" value="artificial" checked>
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">Искусственный газон (трава)</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="surface[]" value="natural">
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">Натуральный газон (живая трава)</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="surface[]" value="indoor">
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">Крытый манеж (всепогодный)</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="surface[]" value="outdoor" checked>
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">Открытая площадка</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Блок: Удобства -->
+              <div class="filter-col">
+                <h3 class="filter-col-title">Необходимые удобства</h3>
+                <div class="checkbox-list">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="amenity[]" value="lighting" checked>
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">💡 Освещение / Прожекторы</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="amenity[]" value="shower" checked>
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">🚿 Горячий душ и раздевалки</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="amenity[]" value="parking" checked>
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">🚗 Бесплатная автопарковка</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="amenity[]" value="stands">
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">🏟️ Трибуны для зрителей</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="amenity[]" value="inventory">
+                    <span class="checkbox-mark"></span>
+                    <span class="checkbox-text">⚽ Аренда мячей и манишек</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Блок: Бюджет -->
+              <div class="filter-col">
+                <h3 class="filter-col-title">Стоимость за 1 час (UZS)</h3>
+                <div class="price-inputs-wrapper">
+                  <div class="price-input-box">
+                    <span>от</span>
+                    <input type="number" name="min_price" placeholder="150 000" min="0" step="10000" value="180000" class="form-control">
+                  </div>
+                  <span class="price-separator">—</span>
+                  <div class="price-input-box">
+                    <span>до</span>
+                    <input type="number" name="max_price" placeholder="600 000" min="0" step="10000" value="500000" class="form-control">
+                  </div>
+                </div>
+                <div class="filter-tip">
+                  💡 В вечернее время (с 19:00) цена может отличаться из-за включения прожекторов.
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- Кнопка отправки формы поиска -->
+          <div class="filter-actions-bar">
+            <a href="/" class="btn-reset">Сбросить фильтры</a>
+            <button type="submit" class="btn btn-primary btn-search-submit" id="search-submit-button">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+              Показать доступные поля в Ташкенте
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== КАТАЛОГ ФУТБОЛЬНЫХ ПОЛЕЙ ==================== -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="catalog-heading-wrap">
+          <div>
+            <h2 class="section-title">Футбольные поля в Ташкенте</h2>
+            <p class="section-desc">Найдено 6 лучших площадок по вашему запросу</p>
+          </div>
+          <div class="sort-badge">
+            Сортировка: <span>По популярности и рейтингу</span>
+          </div>
+        </div>
+
+        <div class="pitch-grid">
+          
+          <!-- ================= КАРТОЧКА 1 ================= -->
+          <article class="pitch-card" id="field-1">
+            <!-- PURE CSS МИНИ-ГАЛЕРЕЯ НА РАДИОКНОПКАХ -->
+            <div class="pitch-gallery">
+              <input type="radio" name="gallery-1" id="g1-img1" class="gallery-radio" checked>
+              <input type="radio" name="gallery-1" id="g1-img2" class="gallery-radio">
+              <input type="radio" name="gallery-1" id="g1-img3" class="gallery-radio">
+
+              <div class="gallery-slides">
+                <!-- Слайд 1 -->
+                <div class="slide slide-1">
+                  <div class="pitch-photo-render bg-pitch-1">
+                    <span class="slide-badge size-tag">5х5 и 7х7</span>
+                  </div>
+                </div>
+                <!-- Слайд 2 -->
+                <div class="slide slide-2">
+                  <div class="pitch-photo-render bg-pitch-2">
+                    <span class="slide-badge indoor-tag">Раздевалки и душ</span>
+                  </div>
+                </div>
+                <!-- Слайд 3 -->
+                <div class="slide slide-3">
+                  <div class="pitch-photo-render bg-pitch-3">
+                    <span class="slide-badge light-tag">Вечернее освещение</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Точки-переключатели мини-галереи (Pure CSS) -->
+              <div class="gallery-controls">
+                <label for="g1-img1" class="gallery-dot" aria-label="Фото 1"></label>
+                <label for="g1-img2" class="gallery-dot" aria-label="Фото 2"></label>
+                <label for="g1-img3" class="gallery-dot" aria-label="Фото 3"></label>
+              </div>
+
+              <div class="gallery-rating">★ 4.9 <small>(94)</small></div>
+            </div>
+
+            <div class="pitch-card-body">
+              <div class="pitch-header-info">
+                <span class="pitch-district-tag">Чиланзарский район</span>
+                <h3 class="pitch-title">Bunyodkor Arena Mini</h3>
+                <p class="pitch-address">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  ул. Бунёдкор, 47 (Ориентир: ст. метро Мирзо Улугбек)
+                </p>
+              </div>
+
+              <div class="pitch-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Покрытие:</span>
+                  <span class="spec-value">Искусственный газон (Германия, 60 мм)</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Размеры:</span>
+                  <span class="spec-value">42 × 22 м (Идеально 5х5 / 6х6)</span>
+                </div>
+              </div>
+
+              <div class="amenities-tags">
+                <span class="amenity-pill">💡 Прожекторы 800 Lux</span>
+                <span class="amenity-pill">🚿 4 душевые кабины</span>
+                <span class="amenity-pill">🚗 Охраняемый паркинг</span>
+                <span class="amenity-pill">🥤 Кафе-бар</span>
+              </div>
+
+              <div class="pitch-card-footer">
+                <div class="price-box">
+                  <span class="price-caption">Стоимость аренды</span>
+                  <span class="price-amount">280 000 <span class="currency">UZS</span></span>
+                  <span class="price-period">за 1 час</span>
+                </div>
+                <!-- Pure CSS Modal Trigger via href="#modal-booking-1" -->
+                <a href="#modal-booking-1" class="btn btn-primary btn-book" id="btn-open-booking-1">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= КАРТОЧКА 2 ================= -->
+          <article class="pitch-card" id="field-2">
+            <div class="pitch-gallery">
+              <input type="radio" name="gallery-2" id="g2-img1" class="gallery-radio" checked>
+              <input type="radio" name="gallery-2" id="g2-img2" class="gallery-radio">
+              <input type="radio" name="gallery-2" id="g2-img3" class="gallery-radio">
+
+              <div class="gallery-slides">
+                <div class="slide slide-1">
+                  <div class="pitch-photo-render bg-pitch-indoor">
+                    <span class="slide-badge indoor-badge">Крытый тёплый манеж</span>
+                  </div>
+                </div>
+                <div class="slide slide-2">
+                  <div class="pitch-photo-render bg-pitch-2">
+                    <span class="slide-badge size-tag">Поле 5х5</span>
+                  </div>
+                </div>
+                <div class="slide slide-3">
+                  <div class="pitch-photo-render bg-pitch-3">
+                    <span class="slide-badge light-tag">Кондиционирование</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-controls">
+                <label for="g2-img1" class="gallery-dot" aria-label="Фото 1"></label>
+                <label for="g2-img2" class="gallery-dot" aria-label="Фото 2"></label>
+                <label for="g2-img3" class="gallery-dot" aria-label="Фото 3"></label>
+              </div>
+
+              <div class="gallery-rating">★ 4.8 <small>(112)</small></div>
+            </div>
+
+            <div class="pitch-card-body">
+              <div class="pitch-header-info">
+                <span class="pitch-district-tag">Юнусабадский район</span>
+                <h3 class="pitch-title">Yunusabad Indoor Arena</h3>
+                <p class="pitch-address">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  Юнусабад, 4-й квартал (Ориентир: ТЦ Mega Planet)
+                </p>
+              </div>
+
+              <div class="pitch-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Покрытие:</span>
+                  <span class="spec-value">Крытый итальянский монофиламент (50 мм)</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Размеры:</span>
+                  <span class="spec-value">40 × 20 м (Формат 5х5)</span>
+                </div>
+              </div>
+
+              <div class="amenities-tags">
+                <span class="amenity-pill">🌡️ Отопление и вентиляция</span>
+                <span class="amenity-pill">🚿 Чистый душ с феном</span>
+                <span class="amenity-pill">🅿️ Парковка на 40 авто</span>
+                <span class="amenity-pill">👕 Раздевалка с замками</span>
+              </div>
+
+              <div class="pitch-card-footer">
+                <div class="price-box">
+                  <span class="price-caption">Стоимость аренды</span>
+                  <span class="price-amount">320 000 <span class="currency">UZS</span></span>
+                  <span class="price-period">за 1 час</span>
+                </div>
+                <a href="#modal-booking-2" class="btn btn-primary btn-book" id="btn-open-booking-2">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= КАРТОЧКА 3 ================= -->
+          <article class="pitch-card" id="field-3">
+            <div class="pitch-gallery">
+              <input type="radio" name="gallery-3" id="g3-img1" class="gallery-radio" checked>
+              <input type="radio" name="gallery-3" id="g3-img2" class="gallery-radio">
+              <input type="radio" name="gallery-3" id="g3-img3" class="gallery-radio">
+
+              <div class="gallery-slides">
+                <div class="slide slide-1">
+                  <div class="pitch-photo-render bg-pitch-natural">
+                    <span class="slide-badge natural-badge">Натуральный газон</span>
+                  </div>
+                </div>
+                <div class="slide slide-2">
+                  <div class="pitch-photo-render bg-pitch-1">
+                    <span class="slide-badge size-tag">Полноразмерное 11х11</span>
+                  </div>
+                </div>
+                <div class="slide slide-3">
+                  <div class="pitch-photo-render bg-pitch-2">
+                    <span class="slide-badge light-tag">Трибуны на 300 мест</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-controls">
+                <label for="g3-img1" class="gallery-dot" aria-label="Фото 1"></label>
+                <label for="g3-img2" class="gallery-dot" aria-label="Фото 2"></label>
+                <label for="g3-img3" class="gallery-dot" aria-label="Фото 3"></label>
+              </div>
+
+              <div class="gallery-rating">★ 5.0 <small>(76)</small></div>
+            </div>
+
+            <div class="pitch-card-body">
+              <div class="pitch-header-info">
+                <span class="pitch-district-tag">Мирабадский район</span>
+                <h3 class="pitch-title">Lokomotiv Stadium Park</h3>
+                <p class="pitch-address">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  ул. Темирйулчилар, 12 (Ориентир: Северный вокзал)
+                </p>
+              </div>
+
+              <div class="pitch-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Покрытие:</span>
+                  <span class="spec-value">Профессиональный натуральный газон</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Размеры:</span>
+                  <span class="spec-value">105 × 68 м (Делится на 7х7 или 11х11)</span>
+                </div>
+              </div>
+
+              <div class="amenities-tags">
+                <span class="amenity-pill">🌱 Живой газон с поливом</span>
+                <span class="amenity-pill">🏟️ Трибуны для болельщиков</span>
+                <span class="amenity-pill">💡 Спортивное освещение</span>
+                <span class="amenity-pill">🚿 VIP раздевалки</span>
+              </div>
+
+              <div class="pitch-card-footer">
+                <div class="price-box">
+                  <span class="price-caption">Стоимость аренды</span>
+                  <span class="price-amount">450 000 <span class="currency">UZS</span></span>
+                  <span class="price-period">за 1 час</span>
+                </div>
+                <a href="#modal-booking-3" class="btn btn-primary btn-book" id="btn-open-booking-3">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= КАРТОЧКА 4 ================= -->
+          <article class="pitch-card" id="field-4">
+            <div class="pitch-gallery">
+              <input type="radio" name="gallery-4" id="g4-img1" class="gallery-radio" checked>
+              <input type="radio" name="gallery-4" id="g4-img2" class="gallery-radio">
+
+              <div class="gallery-slides">
+                <div class="slide slide-1">
+                  <div class="pitch-photo-render bg-pitch-3">
+                    <span class="slide-badge size-tag">Формат 5х5</span>
+                  </div>
+                </div>
+                <div class="slide slide-2">
+                  <div class="pitch-photo-render bg-pitch-1">
+                    <span class="slide-badge light-tag">Центр города</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-controls">
+                <label for="g4-img1" class="gallery-dot" aria-label="Фото 1"></label>
+                <label for="g4-img2" class="gallery-dot" aria-label="Фото 2"></label>
+              </div>
+
+              <div class="gallery-rating">★ 4.7 <small>(53)</small></div>
+            </div>
+
+            <div class="pitch-card-body">
+              <div class="pitch-header-info">
+                <span class="pitch-district-tag">Шайхантахурский район</span>
+                <h3 class="pitch-title">Milliy Park Football Hub</h3>
+                <p class="pitch-address">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  ул. Алишера Навои, парк Дружбы (Ориентир: ст. Дружба Народов)
+                </p>
+              </div>
+
+              <div class="pitch-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Покрытие:</span>
+                  <span class="spec-value">Искусственная трава 55 мм + кварцевый песок</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Размеры:</span>
+                  <span class="spec-value">38 × 20 м (5х5)</span>
+                </div>
+              </div>
+
+              <div class="amenities-tags">
+                <span class="amenity-pill">💡 Прожекторы 1000 Lux</span>
+                <span class="amenity-pill">🚿 Раздевалки с душем</span>
+                <span class="amenity-pill">⚽ Мячи Select в комплекте</span>
+              </div>
+
+              <div class="pitch-card-footer">
+                <div class="price-box">
+                  <span class="price-caption">Стоимость аренды</span>
+                  <span class="price-amount">240 000 <span class="currency">UZS</span></span>
+                  <span class="price-period">за 1 час</span>
+                </div>
+                <a href="#modal-booking-4" class="btn btn-primary btn-book" id="btn-open-booking-4">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= КАРТОЧКА 5 ================= -->
+          <article class="pitch-card" id="field-5">
+            <div class="pitch-gallery">
+              <input type="radio" name="gallery-5" id="g5-img1" class="gallery-radio" checked>
+              <input type="radio" name="gallery-5" id="g5-img2" class="gallery-radio">
+
+              <div class="gallery-slides">
+                <div class="slide slide-1">
+                  <div class="pitch-photo-render bg-pitch-2">
+                    <span class="slide-badge size-tag">Формат 7х7</span>
+                  </div>
+                </div>
+                <div class="slide slide-2">
+                  <div class="pitch-photo-render bg-pitch-1">
+                    <span class="slide-badge light-tag">Большая зона выбега</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-controls">
+                <label for="g5-img1" class="gallery-dot" aria-label="Фото 1"></label>
+                <label for="g5-img2" class="gallery-dot" aria-label="Фото 2"></label>
+              </div>
+
+              <div class="gallery-rating">★ 4.6 <small>(42)</small></div>
+            </div>
+
+            <div class="pitch-card-body">
+              <div class="pitch-header-info">
+                <span class="pitch-district-tag">Мирзо-Улугбекский район</span>
+                <h3 class="pitch-title">TTZ Olympic Sport Complex</h3>
+                <p class="pitch-address">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  массив ТТЗ-2, ул. Буюк Ипак Йули (Ориентир: Корзинка ТТЗ)
+                </p>
+              </div>
+
+              <div class="pitch-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Покрытие:</span>
+                  <span class="spec-value">Голландский искусственный ворс 60 мм</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Размеры:</span>
+                  <span class="spec-value">60 × 40 м (7х7 или два поля 5х5)</span>
+                </div>
+              </div>
+
+              <div class="amenities-tags">
+                <span class="amenity-pill">💡 Светодиодное освещение</span>
+                <span class="amenity-pill">🚿 Горячая вода без перебоев</span>
+                <span class="amenity-pill">🚗 Просторная автостоянка</span>
+              </div>
+
+              <div class="pitch-card-footer">
+                <div class="price-box">
+                  <span class="price-caption">Стоимость аренды</span>
+                  <span class="price-amount">200 000 <span class="currency">UZS</span></span>
+                  <span class="price-period">за 1 час</span>
+                </div>
+                <a href="#modal-booking-5" class="btn btn-primary btn-book" id="btn-open-booking-5">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= КАРТОЧКА 6 ================= -->
+          <article class="pitch-card" id="field-6">
+            <div class="pitch-gallery">
+              <input type="radio" name="gallery-6" id="g6-img1" class="gallery-radio" checked>
+              <input type="radio" name="gallery-6" id="g6-img2" class="gallery-radio">
+
+              <div class="gallery-slides">
+                <div class="slide slide-1">
+                  <div class="pitch-photo-render bg-pitch-1">
+                    <span class="slide-badge size-tag">Новое поле 2025</span>
+                  </div>
+                </div>
+                <div class="slide slide-2">
+                  <div class="pitch-photo-render bg-pitch-indoor">
+                    <span class="slide-badge indoor-badge">Новейший дренаж</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-controls">
+                <label for="g6-img1" class="gallery-dot" aria-label="Фото 1"></label>
+                <label for="g6-img2" class="gallery-dot" aria-label="Фото 2"></label>
+              </div>
+
+              <div class="gallery-rating">★ 4.9 <small>(89)</small></div>
+            </div>
+
+            <div class="pitch-card-body">
+              <div class="pitch-header-info">
+                <span class="pitch-district-tag">Сергелийский район</span>
+                <h3 class="pitch-title">Sergeli Champions Club</h3>
+                <p class="pitch-address">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  Сергели 7, массив Янги Чоштепа (Ориентир: ст. метро 4-Бекат)
+                </p>
+              </div>
+
+              <div class="pitch-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Покрытие:</span>
+                  <span class="spec-value">Антитравматичный искусственный ковер 50 мм</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Размеры:</span>
+                  <span class="spec-value">44 × 24 м (Формат 5х5 / 6х6)</span>
+                </div>
+              </div>
+
+              <div class="amenities-tags">
+                <span class="amenity-pill">💡 Прожекторы 600 Lux</span>
+                <span class="amenity-pill">🚿 Новые душевые и сауна</span>
+                <span class="amenity-pill">🅿️ Стоянка на 50 авто</span>
+                <span class="amenity-pill">🎽 Манишки и мячи</span>
+              </div>
+
+              <div class="pitch-card-footer">
+                <div class="price-box">
+                  <span class="price-caption">Стоимость аренды</span>
+                  <span class="price-amount">220 000 <span class="currency">UZS</span></span>
+                  <span class="price-period">за 1 час</span>
+                </div>
+                <a href="#modal-booking-6" class="btn btn-primary btn-book" id="btn-open-booking-6">
+                  Забронировать
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ИНФОРМАЦИОННЫЙ БЛОК ==================== -->
+    <section class="info-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ПРОСТОЙ ПРОЦЕСС</span>
+          <h2 class="section-title">Как работает бронирование</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3 class="step-title">Выберите площадку</h3>
+            <p class="step-desc">Укажите ваш район в Ташкенте, формат игры (5х5, 7х7 или 11х11) и желаемое покрытие.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3 class="step-title">Выберите время</h3>
+            <p class="step-desc">Нажмите кнопку «Забронировать» и выберите удобный свободный часовой слот в сетке.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3 class="step-title">Подтвердите бронь</h3>
+            <p class="step-desc">Введите имя и номер телефона (+998). Администратор поля мгновенно получит уведомление.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">04</span>
+            <h3 class="step-title">Приходите и играйте</h3>
+            <p class="step-desc">Оплата производится на месте администратору удобным способом (Payme, Click или наличными).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== РАЙОНЫ ТАШКЕНТА ==================== -->
+    <section class="districts-section" id="districts">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ЛОКАЦИИ</span>
+          <h2 class="section-title">Футбольные поля по районам Ташкента</h2>
+        </div>
+        <div class="districts-cloud">
+          <a href="/search?district=chilonzor" class="district-pill">Чиланзарский (28)</a>
+          <a href="/search?district=yunusobod" class="district-pill">Юнусабадский (24)</a>
+          <a href="/search?district=mirobod" class="district-pill">Мирабадский (19)</a>
+          <a href="/search?district=mirzo-ulugbek" class="district-pill">Мирзо-Улугбекский (22)</a>
+          <a href="/search?district=yakkasaroy" class="district-pill">Яккасарайский (15)</a>
+          <a href="/search?district=shaykhontokhur" class="district-pill">Шайхантахурский (18)</a>
+          <a href="/search?district=sergeli" class="district-pill">Сергелийский (14)</a>
+          <a href="/search?district=olmazor" class="district-pill">Алмазарский (16)</a>
+          <a href="/search?district=yashnobod" class="district-pill">Яшнабадский (12)</a>
+          <a href="/search?district=uchtepa" class="district-pill">Учтепинский (11)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== PURE CSS МОДАЛЬНОЕ ОКНО БРОНИРОВАНИЯ (ПОЛЕ 1) ==================== -->
+  <!-- Открывается при переходе по ссылке #modal-booking-1 благодаря CSS селектору :target -->
+  <aside class="modal" id="modal-booking-1" role="dialog" aria-labelledby="modal-title-1" aria-modal="true">
+    <!-- Фоновый оверлей: клик по нему закрывает окно (переход на якорь #close) -->
+    <a href="#close" class="modal-backdrop" aria-label="Закрыть окно"></a>
+
+    <div class="modal-window">
+      <!-- Кнопка закрытия -->
+      <a href="#close" class="modal-close-btn" aria-label="Закрыть">&times;</a>
+
+      <div class="modal-header">
+        <div class="modal-badge">Бронирование поля #1</div>
+        <h2 class="modal-title" id="modal-title-1">Bunyodkor Arena Mini</h2>
+        <p class="modal-subtitle">
+          📍 Чиланзар, ул. Бунёдкор, 47 • <strong class="text-accent">280 000 UZS / час</strong>
+        </p>
+      </div>
+
+      <!-- ФОРМА БРОНИРОВАНИЯ: HTML POST НАПРЯМУЮ НА СЕРВЕР -->
+      <form action="/booking" method="POST" class="booking-post-form">
+        <!-- Скрытое поле с ID площадки -->
+        <input type="hidden" name="field_id" value="bunyodkor-mini-1">
+        <input type="hidden" name="field_name" value="Bunyodkor Arena Mini">
+        <input type="hidden" name="price_per_hour" value="280000">
+
+        <!-- Выбор даты бронирования -->
+        <div class="form-group mb-4">
+          <label for="booking-date-1" class="form-label">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+            </svg>
+            Выберите дату игры:
+          </label>
+          <input type="date" name="booking_date" id="booking-date-1" class="form-control" required value="2026-09-19">
+        </div>
+
+        <!-- Выбор свободного времени: сетка радиокнопок -->
+        <div class="form-group mb-4">
+          <span class="form-label">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+            </svg>
+            Свободные часовые слоты (нажмите для выбора):
+          </span>
+          
+          <div class="time-slots-grid">
+            <!-- Утренние слоты -->
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="08:00-09:00" class="time-radio">
+              <span class="time-slot-box">08:00 - 09:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="10:00-11:00" class="time-radio">
+              <span class="time-slot-box">10:00 - 11:00</span>
+            </label>
+            <!-- Занятый слот (disabled) -->
+            <label class="time-slot-label slot-booked" title="Этот слот уже забронирован">
+              <input type="radio" name="time" value="16:00-17:00" class="time-radio" disabled>
+              <span class="time-slot-box">16:00 (Занято)</span>
+            </label>
+            <label class="time-slot-label slot-booked" title="Этот слот уже забронирован">
+              <input type="radio" name="time" value="17:00-18:00" class="time-radio" disabled>
+              <span class="time-slot-box">17:00 (Занято)</span>
+            </label>
+            <!-- Прайм-тайм вечерние слоты -->
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="18:00-19:00" class="time-radio" checked>
+              <span class="time-slot-box prime-slot">18:00 - 19:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="19:00-20:00" class="time-radio">
+              <span class="time-slot-box prime-slot">19:00 - 20:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="20:00-21:00" class="time-radio">
+              <span class="time-slot-box prime-slot">20:00 - 21:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="21:00-22:00" class="time-radio">
+              <span class="time-slot-box prime-slot">21:00 - 22:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="22:00-23:00" class="time-radio">
+              <span class="time-slot-box">22:00 - 23:00</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Дополнительные опции аренды -->
+        <div class="form-group mb-4">
+          <span class="form-label">Дополнительный инвентарь:</span>
+          <div class="checkbox-row-options">
+            <label class="custom-checkbox">
+              <input type="checkbox" name="extra_balls" value="yes">
+              <span class="checkbox-mark"></span>
+              <span class="checkbox-text">Мяч Select (+20 000 UZS)</span>
+            </label>
+            <label class="custom-checkbox">
+              <input type="checkbox" name="extra_bibs" value="yes">
+              <span class="checkbox-mark"></span>
+              <span class="checkbox-text">Манишки 2 цвета (+25 000 UZS)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Контактные данные игрока -->
+        <div class="form-row-two mb-4">
+          <div class="form-group">
+            <label for="book-name-1" class="form-label">Ваше имя:</label>
+            <input type="text" name="customer_name" id="book-name-1" class="form-control" placeholder="Например: Сардор" required>
+          </div>
+          <div class="form-group">
+            <label for="book-phone-1" class="form-label">Номер телефона:</label>
+            <input type="tel" name="customer_phone" id="book-phone-1" class="form-control" value="+998" pattern="\+998[0-9]{9}" placeholder="+998 90 123 45 67" required title="Формат: +998XXXXXXXXX (9 цифр после +998)">
+          </div>
+        </div>
+
+        <!-- Кнопка отправки POST-запроса -->
+        <div class="modal-footer-action">
+          <a href="#close" class="btn btn-secondary">Отмена</a>
+          <button type="submit" class="btn btn-primary btn-confirm-booking" id="submit-booking-1">
+            ⚽ Подтвердить бронь
+          </button>
+        </div>
+        <p class="modal-security-note">
+          🔒 Оплата на месте перед игрой. Без предоплаты и скрытых комиссий.
+        </p>
+      </form>
+    </div>
+  </aside>
+
+  <!-- ==================== PURE CSS МОДАЛЬНЫЕ ОКНА ДЛЯ ОСТАЛЬНЫХ ПОЛЕЙ ==================== -->
+  <!-- Модалка поля 2 -->
+  <aside class="modal" id="modal-booking-2" role="dialog" aria-labelledby="modal-title-2" aria-modal="true">
+    <a href="#close" class="modal-backdrop" aria-label="Закрыть окно"></a>
+    <div class="modal-window">
+      <a href="#close" class="modal-close-btn" aria-label="Закрыть">&times;</a>
+      <div class="modal-header">
+        <div class="modal-badge">Бронирование поля #2</div>
+        <h2 class="modal-title" id="modal-title-2">Yunusabad Indoor Arena</h2>
+        <p class="modal-subtitle">📍 Юнусабад, 4-й квартал • <strong class="text-accent">320 000 UZS / час</strong></p>
+      </div>
+      <form action="/booking" method="POST" class="booking-post-form">
+        <input type="hidden" name="field_id" value="yunusabad-indoor-2">
+        <input type="hidden" name="field_name" value="Yunusabad Indoor Arena">
+        <input type="hidden" name="price_per_hour" value="320000">
+
+        <div class="form-group mb-4">
+          <label for="booking-date-2" class="form-label">Дата игры:</label>
+          <input type="date" name="booking_date" id="booking-date-2" class="form-control" required value="2026-09-19">
+        </div>
+
+        <div class="form-group mb-4">
+          <span class="form-label">Свободные слоты:</span>
+          <div class="time-slots-grid">
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="17:00-18:00" class="time-radio">
+              <span class="time-slot-box">17:00 - 18:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="18:00-19:00" class="time-radio" checked>
+              <span class="time-slot-box prime-slot">18:00 - 19:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="19:00-20:00" class="time-radio">
+              <span class="time-slot-box prime-slot">19:00 - 20:00</span>
+            </label>
+            <label class="time-slot-label slot-booked">
+              <input type="radio" name="time" value="20:00-21:00" class="time-radio" disabled>
+              <span class="time-slot-box">20:00 (Занято)</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="21:00-22:00" class="time-radio">
+              <span class="time-slot-box prime-slot">21:00 - 22:00</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row-two mb-4">
+          <div class="form-group">
+            <label for="book-name-2" class="form-label">Имя:</label>
+            <input type="text" name="customer_name" id="book-name-2" class="form-control" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <label for="book-phone-2" class="form-label">Телефон:</label>
+            <input type="tel" name="customer_phone" id="book-phone-2" class="form-control" value="+998" pattern="\+998[0-9]{9}" required>
+          </div>
+        </div>
+
+        <div class="modal-footer-action">
+          <a href="#close" class="btn btn-secondary">Отмена</a>
+          <button type="submit" class="btn btn-primary btn-confirm-booking">Подтвердить бронь</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Модалки 3, 4, 5, 6 (для универсальной поддержки карточек каталога) -->
+  <aside class="modal" id="modal-booking-3" role="dialog" aria-modal="true">
+    <a href="#close" class="modal-backdrop"></a>
+    <div class="modal-window">
+      <a href="#close" class="modal-close-btn">&times;</a>
+      <div class="modal-header">
+        <h2 class="modal-title">Lokomotiv Stadium Park</h2>
+        <p class="modal-subtitle">📍 Мирабад • <strong class="text-accent">450 000 UZS / час</strong></p>
+      </div>
+      <form action="/booking" method="POST" class="booking-post-form">
+        <input type="hidden" name="field_id" value="lokomotiv-park-3">
+        <div class="form-group mb-4">
+          <label class="form-label">Дата игры:</label>
+          <input type="date" name="booking_date" class="form-control" required value="2026-09-19">
+        </div>
+        <div class="form-group mb-4">
+          <span class="form-label">Время:</span>
+          <div class="time-slots-grid">
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="18:00-19:00" class="time-radio" checked>
+              <span class="time-slot-box">18:00 - 19:00</span>
+            </label>
+            <label class="time-slot-label">
+              <input type="radio" name="time" value="20:00-21:00" class="time-radio">
+              <span class="time-slot-box">20:00 - 21:00</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-row-two mb-4">
+          <input type="text" name="customer_name" class="form-control" placeholder="Ваше имя" required>
+          <input type="tel" name="customer_phone" class="form-control" value="+998" pattern="\+998[0-9]{9}" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Подтвердить бронь</button>
+      </form>
+    </div>
+  </aside>
+
+  <aside class="modal" id="modal-booking-4" role="dialog" aria-modal="true">
+    <a href="#close" class="modal-backdrop"></a>
+    <div class="modal-window">
+      <a href="#close" class="modal-close-btn">&times;</a>
+      <div class="modal-header">
+        <h2 class="modal-title">Milliy Park Football Hub</h2>
+        <p class="modal-subtitle">📍 Шайхантахур • <strong class="text-accent">240 000 UZS / час</strong></p>
+      </div>
+      <form action="/booking" method="POST" class="booking-post-form">
+        <input type="hidden" name="field_id" value="milliy-park-4">
+        <div class="form-group mb-4">
+          <label class="form-label">Дата игры:</label>
+          <input type="date" name="booking_date" class="form-control" required value="2026-09-19">
+        </div>
+        <div class="form-group mb-4">
+          <span class="form-label">Время:</span>
+          <div class="time-slots-grid">
+            <label class="time-slot-label"><input type="radio" name="time" value="19:00-20:00" class="time-radio" checked><span class="time-slot-box">19:00 - 20:00</span></label>
+            <label class="time-slot-label"><input type="radio" name="time" value="21:00-22:00" class="time-radio"><span class="time-slot-box">21:00 - 22:00</span></label>
+          </div>
+        </div>
+        <div class="form-row-two mb-4">
+          <input type="text" name="customer_name" class="form-control" placeholder="Ваше имя" required>
+          <input type="tel" name="customer_phone" class="form-control" value="+998" pattern="\+998[0-9]{9}" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Подтвердить бронь</button>
+      </form>
+    </div>
+  </aside>
+
+  <aside class="modal" id="modal-booking-5" role="dialog" aria-modal="true">
+    <a href="#close" class="modal-backdrop"></a>
+    <div class="modal-window">
+      <a href="#close" class="modal-close-btn">&times;</a>
+      <div class="modal-header">
+        <h2 class="modal-title">TTZ Olympic Sport Complex</h2>
+        <p class="modal-subtitle">📍 Мирзо-Улугбек • <strong class="text-accent">200 000 UZS / час</strong></p>
+      </div>
+      <form action="/booking" method="POST" class="booking-post-form">
+        <input type="hidden" name="field_id" value="ttz-olympic-5">
+        <div class="form-group mb-4">
+          <label class="form-label">Дата игры:</label>
+          <input type="date" name="booking_date" class="form-control" required value="2026-09-19">
+        </div>
+        <div class="form-group mb-4">
+          <span class="form-label">Время:</span>
+          <div class="time-slots-grid">
+            <label class="time-slot-label"><input type="radio" name="time" value="19:00-20:00" class="time-radio" checked><span class="time-slot-box">19:00 - 20:00</span></label>
+            <label class="time-slot-label"><input type="radio" name="time" value="20:00-21:00" class="time-radio"><span class="time-slot-box">20:00 - 21:00</span></label>
+          </div>
+        </div>
+        <div class="form-row-two mb-4">
+          <input type="text" name="customer_name" class="form-control" placeholder="Ваше имя" required>
+          <input type="tel" name="customer_phone" class="form-control" value="+998" pattern="\+998[0-9]{9}" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Подтвердить бронь</button>
+      </form>
+    </div>
+  </aside>
+
+  <aside class="modal" id="modal-booking-6" role="dialog" aria-modal="true">
+    <a href="#close" class="modal-backdrop"></a>
+    <div class="modal-window">
+      <a href="#close" class="modal-close-btn">&times;</a>
+      <div class="modal-header">
+        <h2 class="modal-title">Sergeli Champions Club</h2>
+        <p class="modal-subtitle">📍 Сергели 7 • <strong class="text-accent">220 000 UZS / час</strong></p>
+      </div>
+      <form action="/booking" method="POST" class="booking-post-form">
+        <input type="hidden" name="field_id" value="sergeli-champions-6">
+        <div class="form-group mb-4">
+          <label class="form-label">Дата игры:</label>
+          <input type="date" name="booking_date" class="form-control" required value="2026-09-19">
+        </div>
+        <div class="form-group mb-4">
+          <span class="form-label">Время:</span>
+          <div class="time-slots-grid">
+            <label class="time-slot-label"><input type="radio" name="time" value="18:00-19:00" class="time-radio" checked><span class="time-slot-box">18:00 - 19:00</span></label>
+            <label class="time-slot-label"><input type="radio" name="time" value="19:00-20:00" class="time-radio"><span class="time-slot-box">19:00 - 20:00</span></label>
+          </div>
+        </div>
+        <div class="form-row-two mb-4">
+          <input type="text" name="customer_name" class="form-control" placeholder="Ваше имя" required>
+          <input type="tel" name="customer_phone" class="form-control" value="+998" pattern="\+998[0-9]{9}" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Подтвердить бронь</button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- ==================== ФУТЕР (FOOTER) ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col">
+        <div class="logo-title mb-2">MAYDON<span class="text-accent">.UZ</span></div>
+        <p class="footer-desc">
+          Единая платформа поиска и онлайн-бронирования футбольных площадок в Ташкенте. Чистый HTML5 и CSS3 без сторонних скриптов.
+        </p>
+        <p class="copyright">© 2026 Maydon.uz. Все права защищены.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Популярные районы</h4>
+        <ul class="footer-links">
+          <li><a href="/search?district=chilonzor">Поля на Чиланзаре</a></li>
+          <li><a href="/search?district=yunusobod">Поля на Юнусабаде</a></li>
+          <li><a href="/search?district=mirobod">Поля в Мирабаде</a></li>
+          <li><a href="/search?district=mirzo-ulugbek">Поля в Мирзо-Улугбеке</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Контакты и поддержка</h4>
+        <p class="footer-contact-item">📞 +998 (71) 200-00-00</p>
+        <p class="footer-contact-item">💬 Telegram: @maydon_uz</p>
+        <p class="footer-contact-item">📍 Узбекистан, г. Ташкент</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
